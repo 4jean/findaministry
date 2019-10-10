@@ -13,4 +13,4 @@ Your Contributions & suggestions are welcomed.
 
 ## Security Vulnerabilities
 
-If you discover a security vulnerability within FAM, please us via our [Contact Page](http://findaministry.com/contact). All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within FAM, please reach us via our [Contact Page](http://findaministry.com/contact). All security vulnerabilities will be promptly addressed.
