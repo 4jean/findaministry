@@ -8,6 +8,7 @@ use App\MyHelper\Fam;
 use App\Repositories\MinistryRepo;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\Storage;
 
 class TestController extends Controller
 {
@@ -21,8 +22,7 @@ class TestController extends Controller
 
     public function index()
     {
-        $data = ["name" => "Chinedu Okemiri", "email" => "jokemiri@outlook.com", "message" => "This is my message. What is your problem"];
+       return $path = Storage::disk('public')->path('sitemap.xml');
 
-return Carbon::now()->toDayDateTimeString();
     }
 }

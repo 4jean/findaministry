@@ -27,7 +27,8 @@ Route::get('/about', 'HomeController@about')->name('about');
 Route::get('/contact', 'HomeController@contact')->name('contact');
 Route::post('/contact_form', 'HomeController@contact_form')->name('contact_form');
 
-//Route::get('/sitemap', 'SitemapController@index')->name('sitemap');
+Route::get('/sitemap', 'SitemapController@index')->name('sitemap');
+Route::get('/sitemap.xml', 'SitemapController@show')->name('sitemap_show');
 
 Route::get('/terms_of_use', 'HomeController@terms_of_use')->name('terms_of_use');
 Route::get('/privacy_policy', 'HomeController@privacy_policy')->name('privacy_policy');

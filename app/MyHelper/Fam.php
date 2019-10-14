@@ -227,4 +227,9 @@ class Fam {
         return asset('cj_admin/global_assets/images/placeholders/placeholder.jpg');
     }
 
+    public static function userIsAdmin() : bool
+    {
+        return (Auth::check() && Auth::user()->role === 'admin');
+    }
+
 }
