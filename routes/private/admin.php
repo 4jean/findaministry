@@ -1,6 +1,6 @@
 <?php
 
-Route::group(['namespace' => 'admin', 'middleware' => 'admin'], function () {
+Route::group(['namespace' => 'Admin', 'middleware' => 'admin'], function () {
     Route::get('/', 'HomeController@index')->name('cj');
 
     Route::group(['prefix' => 'ministries', ], function(){

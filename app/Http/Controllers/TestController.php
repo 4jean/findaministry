@@ -22,7 +22,8 @@ class TestController extends Controller
 
     public function index()
     {
-       return $path = Storage::disk('public')->path('sitemap.xml');
+        $url = 'http://findaministry.com/SM3279';
+       return str_replace('http', 'https', $url);
 
     }
 }

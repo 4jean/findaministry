@@ -16,6 +16,4 @@
 <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" type="text/css">
 <link rel="stylesheet" href="{{ asset('assets/css/colors.css') }}" type="text/css">
 <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}" type="text/css">
-@if(Route::is('contact'))
-<script src='https://www.google.com/recaptcha/api.js'></script>
-    @endif
+
