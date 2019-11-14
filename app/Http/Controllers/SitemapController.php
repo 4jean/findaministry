@@ -24,7 +24,8 @@ class SitemapController extends Controller
 
     public function generate()
     {
-        SitemapGenerator::create('http://findaministry.com')->writeToFile($this->path);
+        SitemapGenerator::create('https://findaministry.com')->writeToFile($this->path);
+        return "Sitemap Generated Successfully";
     }
 
     public function show()

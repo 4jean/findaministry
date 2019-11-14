@@ -74,6 +74,14 @@
                         <span>Manage Claims</span>
                     </a>
                 </li>
+                
+                {{--Generate Sitemap--}}
+                <li class="nav-item">
+                    <a id="gen-sitemap" href="#" class="nav-link">
+                        <i class="icon-map"></i>
+                        <span>Generate Sitemap</span>
+                    </a>
+                </li>
 
                {{-- <li class="nav-item nav-item-submenu">
                     <a href="#" class="nav-link"><i class="icon-copy"></i> <span>Layouts</span></a>

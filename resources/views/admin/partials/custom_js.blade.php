@@ -117,5 +117,12 @@
         })
     }
 
+    /* Generate Sitemap */
+    $('#gen-sitemap').on('click', function(){
+        flashDanger("Generating SiteMap");
+        $.get("{{ route('sitemap') }}", function (resp) {
+            return flashSuccess(resp)
+        })
+    });
 
 </script>
