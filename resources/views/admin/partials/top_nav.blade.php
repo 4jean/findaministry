@@ -30,7 +30,7 @@
                     <span class="badge badge-pill bg-warning-400 ml-auto ml-md-0">9</span>
                 </a>
 
-                <div class="dropdown-menu dropdown-content wmin-md-350">
+                {{--<div class="dropdown-menu dropdown-content wmin-md-350">
                     <div class="dropdown-content-header">
                         <span class="font-weight-semibold">Git updates</span>
                         <a href="#" class="text-default"><i class="icon-sync"></i></a>
@@ -102,14 +102,22 @@
                             <a href="#" class="text-grey ml-2" data-popup="tooltip" title="Bug tracker"><i class="icon-bug2"></i></a>
                         </div>
                     </div>
-                </div>
+                </div>--}}
             </li>
         </ul>
 
         <span class="badge bg-success ml-md-3 mr-md-auto">Online</span>
 
         <ul class="navbar-nav">
-            <li class="nav-item dropdown">
+
+            {{-- Homepage --}}
+            <li class="nav-item">
+                <a class="navbar-nav-link" title="Homepage" target="_blank" href="{{ route('home') }}">
+                    <i class="icon icon-home"></i><span class="d-md-none ml-2">Homepage</span>
+                </a>
+            </li>
+
+            {{--<li class="nav-item dropdown">
                 <a href="#" class="navbar-nav-link dropdown-toggle caret-0" data-toggle="dropdown">
                     <i class="icon-people"></i>
                     <span class="d-md-none ml-2">Users</span>
@@ -290,7 +298,7 @@
                         <a href="#" class="bg-light text-grey w-100 py-2" data-popup="tooltip" title="Load more"><i class="icon-menu7 d-block top-0"></i></a>
                     </div>
                 </div>
-            </li>
+            </li>--}}
 
             <li class="nav-item dropdown dropdown-user">
                 <a href="#" class="navbar-nav-link d-flex align-items-center dropdown-toggle" data-toggle="dropdown">

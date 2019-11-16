@@ -113,7 +113,7 @@
                                     <div class="form-group">
                                         <label for="ajax_country_code">Country <span class="text-danger">*</span></label>
 
-                                        <select required="required"  name="country_code"  id="ajax_country_code" title="Select Country"  data-live-search="true">
+                                        <select required="required"  name="country_code"  id="ajax_country_code" title="Select Country"  data-live-search="false">
                                             <option value="">Select Country</option>
                                             @foreach($countries as $code => $country)
                                                 <option {{ old('country') ? 'selected' : '' }} value="{{ $code }}">{{ $country }}</option>
@@ -126,7 +126,7 @@
                                     <div class="form-group">
                                         <label for="ajax_state">State <span class="text-danger">*</span> </label>
 
-                                        <select  name="state"  id="ajax_state" title="Select State"  data-live-search="true">
+                                        <select name="state"  id="ajax_state" title="Select State"  data-live-search="false">
                                             @if(old('state'))
                                                 <option selected value="{{ old('state') }}">Select State</option>
 
