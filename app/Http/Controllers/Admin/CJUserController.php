@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Repositories\UserRepo;
 
-class HomeController extends Controller
+class CJUserController extends Controller
 {
     protected $user;
 
@@ -17,6 +17,11 @@ class HomeController extends Controller
     public function index()
     {
         $data['users'] = $this->user->all();
-        return view('admin.pages.index', $data);
+        return view('admin.pages.user.index', $data);
+    }
+
+    public function delete($id)
+    {
+        return $this->user->destroy($id);
     }
 }

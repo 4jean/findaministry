@@ -67,6 +67,14 @@
                     </a>
                 </li>
 
+                {{--Manage Users--}}
+                <li class="nav-item">
+                    <a href="{{ route('cj_users') }}" class="nav-link {{ Fam::currentPageIs(['cj_users', ]) ? 'active' : ''}}">
+                        <i class="icon-users"></i>
+                        <span>Manage Users</span>
+                    </a>
+                </li>
+
                 {{--Manage Claims--}}
                 <li class="nav-item">
                     <a href="{{ route('cj_claims') }}" class="nav-link {{ Route::is('cj_claims') ? 'active' : ''}}">
@@ -74,7 +82,7 @@
                         <span>Manage Claims</span>
                     </a>
                 </li>
-                
+
                 {{--Generate Sitemap--}}
                 <li class="nav-item">
                     <a id="gen-sitemap" href="#" class="nav-link">

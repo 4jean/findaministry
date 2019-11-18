@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -232,7 +231,7 @@ return [
         'Image' => Intervention\Image\Facades\Image::class,
         'Hashids' => Vinkla\Hashids\Facades\Hashids::class,
         'Fam' => App\MyHelper\Fam::class,
-        'Captcha' => Mews\Captcha\Facades\Captcha::class
+        'Captcha' => Mews\Captcha\Facades\Captcha::class,
     ],
 
 ];

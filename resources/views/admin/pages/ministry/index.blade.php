@@ -35,7 +35,7 @@
                     <td><a target="_blank" href="{{ $min->url }}">{{ $min->name }}</a></td>
                     <td>{{ $min->code }}</td>
 
-                    {{--Verification Sttaus--}}
+                    {{--Verification Status--}}
                     <td>
                         <button data-url="{{ route('cj_verify_min', $min->id) }}" data-verified="{{ $min->verified }}" type="button" class="verify-btn btn {{ ($min->verified) ? 'btn-success' : 'btn-danger' }} btn-icon"> {!! ($min->verified) ? "<i class='icon-check'></i>" : "<i class='icon-x'></i>" !!} </button>
                     </td>

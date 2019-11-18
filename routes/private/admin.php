@@ -3,6 +3,7 @@
 Route::group(['namespace' => 'Admin', 'middleware' => 'admin'], function () {
     Route::get('/', 'HomeController@index')->name('cj');
 
+//    Ministries
     Route::group(['prefix' => 'ministries', ], function(){
         Route::get('/', 'CJMinistryController@index')->name('cj_ministries');
         Route::get('edit/{min}', 'CJMinistryController@edit')->name('cj_edit_min');
@@ -13,7 +14,13 @@ Route::group(['namespace' => 'Admin', 'middleware' => 'admin'], function () {
         Route::get('verify/{min}', 'CJMinistryController@verify')->name('cj_verify_min');
     });
 
-    //        Claims' Routes
+//    Users
+    Route::group(['prefix' => 'users', ], function(){
+        Route::get('/', 'CJUserController@index')->name('cj_users');
+        Route::delete('/{user}', 'CJUserController@delete')->name('cj_delete_user');
+    });
+
+//    Claims'
     Route::group(['prefix' => 'claims'], function() {
         Route::get('/{min?}', 'CJClaimController@index')->name('cj_claims');
         Route::get('/{claim_id}/download', 'CJClaimController@download_file')->name('cj_claim_download_file');

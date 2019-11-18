@@ -4,7 +4,6 @@ namespace App\Repositories;
 
 use App\User;
 
-
 class UserRepo {
 
 
@@ -16,5 +15,10 @@ class UserRepo {
     public function all()
     {
         return User::all();
+    }
+
+    public function destroy($id)
+    {
+        return User::destroy($id);
     }
 }
