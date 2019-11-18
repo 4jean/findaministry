@@ -14,7 +14,7 @@ class UserRepo {
 
     public function all()
     {
-        return User::all();
+        return User::orderBy('created_at', 'desc')->get();
     }
 
     public function destroy($id)
