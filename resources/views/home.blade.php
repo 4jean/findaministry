@@ -27,6 +27,18 @@
 
     {{--  @include('partials.ministry.advert')--}}
 
+    {{-- Random Ministries --}}
+    <section id="partners2" class="block">
+        <div class="container">
+            <header class="section-title"><h2>Ministries</h2>
+                <a href="{{ route('ministries') }}" class="link-arrow">All Ministries</a>
+            </header>
+
+            @include('partials.ministry.random')
+        </div>
+    </section>
+
+    {{--Ministry Categories--}}
     <section id="partners" class="block">
         <div class="container">
             <header class="section-title"><h2>Ministry Categories</h2>

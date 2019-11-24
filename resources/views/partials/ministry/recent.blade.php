@@ -4,7 +4,6 @@
 
         <div class="row">
             @foreach($chunk as $min)
-
                 <div class="col-md-3 col-sm-6">
                     <div itemscope="" itemtype="http://schema.org/Organization" class="property equal-height">
 
@@ -43,9 +42,11 @@
                 </div>
             @endforeach
         </div>
+
         @if($loop->index == 9)
     @include('partials.ministry.advert')
         @endif
+
         @endforeach
 
 </section>

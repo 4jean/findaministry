@@ -26,6 +26,11 @@ class MinistryRepo
         return Ministry::all()->pluck('name')->toJson();
     }
 
+    public function getRandomMinistries()
+    {
+        return Ministry::inRandomOrder();
+    }
+
     public function getAllCats()
     {
         return MinCat::orderBy('name', 'asc')->get();

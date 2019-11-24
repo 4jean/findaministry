@@ -25,6 +25,7 @@ class HomeController extends Controller
 
         $data['body_class'] = 'page-homepage page-slider page-slider-search-box';
         $data['page_title'] = 'Home';
+        $data['random_mins'] = $this->min->getRandomMinistries();
 
         return view('home', $data);
     }
