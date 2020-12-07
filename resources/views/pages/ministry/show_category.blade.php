@@ -15,6 +15,7 @@
                         <div class="alert alert-warning text-center">There are No Ministries in The {{ $min_cat_name }} Category</div>
                         @endif
 
+                    {{-- Ministry Grid --}}
                         <div class="grid">
                             @foreach($mins as $min)
 
@@ -85,15 +86,12 @@
                             @endforeach
                         </div>
 
-
                     {{--Pagination--}}
                     <div class="center">
                         {{ $mins->links() }}
                     </div>
                 </section>
             </div>
-
-
 
             <div class="col-md-3 col-sm-3">
                 @include('partials.sidebar')
