@@ -46,7 +46,7 @@
                                         <aside>
 
                                             <header>
-                                                <a href="{{ $min->url }}"><h3>{{ str_limit($min->name, 60) }}</h3></a>
+                                                <a href="{{ $min->url }}"><h3>{{ Str::limit($min->name, 60) }}</h3></a>
                                                 @if($min->country_code == 'NG')
 
                                                     <figure>{{ $min->lga->name.', '.$min->state->name.' State'.'. '.$min->country }}</figure>
@@ -64,12 +64,12 @@
 
                                                 @if($min->website)
                                                     <dt>Website</dt>
-                                                    <dd><a href="{{ $min->website }}" target="_blank">{{ str_limit($min->website, 27) }}</a></dd>
+                                                    <dd><a href="{{ $min->website }}" target="_blank">{{ Str::limit($min->website, 27) }}</a></dd>
                                                 @endif
 
                                                 @if($min->fb)
                                                     <dt>Facebook</dt>
-                                                    <dd><a target="_blank" href="{{ $min->fb }}">{{ str_limit($min->fb, 27) }}</a></dd>
+                                                    <dd><a target="_blank" href="{{ $min->fb }}">{{ Str::limit($min->fb, 27) }}</a></dd>
                                                 @endif
 
                                                 @if($min->postal_code)
