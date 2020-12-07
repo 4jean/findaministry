@@ -49,7 +49,7 @@
                                                 <a href="{{ $min->url }}"><h3>{{ Str::limit($min->name, 60) }}</h3></a>
                                                 @if($min->country_code == 'NG')
 
-                                                    <figure>{{ $min->lga->name.', '.$min->state->name.' State'.'. '.$min->country }}</figure>
+                                                    <figure>{{ $min->city.', '.$min->state.' State'.'. '.$min->country }}</figure>
                                                 @endif
                                             </header>
 
